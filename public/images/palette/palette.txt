@@ -1,0 +1,4 @@
+#2EA1DA => biru
+#E83879 => pink
+#FBB845 => kuning
+#F4E8D0 => background
