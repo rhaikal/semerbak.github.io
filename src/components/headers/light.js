@@ -6,9 +6,10 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+
+const logo = "images/logo/semerbak-logo.png";
 
 const Header = tw.header`
   flex justify-between items-center
@@ -57,6 +58,14 @@ export const DesktopNavLinks = tw.nav`
 `;
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
+  const smoothScroll = (event) => {
+    event.preventDefault();
+    // console.log(document.querySelector(event.target.getAttribute('href')));
+    (document.querySelector(event.target.getAttribute('href'))).scrollIntoView({
+      behavior: "smooth"
+    });
+  }
+  
   /*
    * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
    * This links props should be an array of "NavLinks" components which is exported from this file.
@@ -72,10 +81,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
+      <NavLink onClick={smoothScroll} href="#tentang-kami">Tentang Kami</NavLink>
+      <NavLink onClick={smoothScroll} href="#katalog">Katalog</NavLink>
+      <NavLink onClick={smoothScroll} href="#keunggulan">Keunggulan</NavLink>
     </NavLinks>
   ];
 
@@ -83,9 +91,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
-    <LogoLink href="/">
+    <LogoLink href="">
       <img src={logo} alt="logo" />
-      Treact
+      Semerbak
     </LogoLink>
   );
 

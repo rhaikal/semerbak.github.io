@@ -4,8 +4,6 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
-import Header from "../headers/light.js";
-
 import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
@@ -75,7 +73,7 @@ export default ({
 
   return (
     <>
-      <Header />
+      
       <Container>
         <TwoColumn>
           <LeftColumn>
