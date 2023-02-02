@@ -7,7 +7,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 // import LogoImage from "images/logo.svg";
 import { ReactComponent as ShopeeIcon } from "images/shopee-icon.svg";
 import { ReactComponent as InstagramIcon } from "images/instagram-icon.svg";
-import { ReactComponent as FacebookIcon } from "images/facebook-icon.svg";
+import { ReactComponent as WhatsAppIcon } from "images/whatsapp-icon.svg";
 
 const LogoImage = "images/logo/semerbak-logo.png";
 
@@ -59,14 +59,14 @@ export default () => {
           </LogoContainer>
           <CopywrightNotice>&copy; 2023 Semerbak Parfume. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink target={"_blank"} href="https://shopee.co.id/semerbak.parfume?categoryId=100630&entryPoint=ShopByPDP&itemId=11004598530">
+            <SocialLink target={"_blank"} href="https://shopee.co.id/semerbak.parfume">
               <ShopeeIcon />
             </SocialLink>
-            <SocialLink target={"_blank"} href="https://www.instagram.com/tita.adi/">
+            <SocialLink target={"_blank"} href="https://www.instagram.com/semerbak.parfume/">
               <InstagramIcon />
             </SocialLink>
-            <SocialLink target={"_blank"} href="https://www.facebook.com">
-              <FacebookIcon />
+            <SocialLink target={"_blank"} href="https://wa.me">
+              <WhatsAppIcon />
             </SocialLink>
           </SocialLinksContainer>
         </ThreeColRow>
