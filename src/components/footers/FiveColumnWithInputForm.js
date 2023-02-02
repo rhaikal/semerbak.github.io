@@ -36,7 +36,7 @@ const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-betwee
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
-const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-800`;
+const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-secondary-500`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-500`;
 
@@ -55,7 +55,7 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Semerbak Parfum</LogoText>
+            <LogoText>Semerbak <span tw="text-primary-500">Parfum</span></LogoText>
           </LogoContainer>
           <CopywrightNotice>&copy; 2023 Semerbak Parfume. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
