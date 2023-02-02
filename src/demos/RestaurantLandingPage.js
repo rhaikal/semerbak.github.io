@@ -55,7 +55,7 @@ export default () => {
           primaryButtonText="Kunjungi Toko"
           primaryButtonUrl="https://shopee.co.id/semerbak.parfume"
           imageSrc={
-            "images/jumbotron/hero.jpg"
+            "images/jumbotron/hero.gif"
           }
           imageCss={imageCss}
           imageDecoratorBlob={true}

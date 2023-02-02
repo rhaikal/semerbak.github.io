@@ -31,7 +31,7 @@ const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-2xl sm:text-4xl lg:text-4xl text-center md:text-left break-words leading-normal`;
+)`mt-4 font-black text-left text-2xl sm:text-4xl lg:text-4xl text-center md:text-left break-words leading-normal text-black`;
 const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
